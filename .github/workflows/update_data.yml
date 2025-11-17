@@ -1,0 +1,53 @@
+name: Update Long/Short Max Pain Data
+
+on:
+  schedule:
+    # Her 4 saatte bir (00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC)
+    - cron: '0 */4 * * *'
+  
+  workflow_dispatch:
+
+jobs:
+  update-maxpain-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    
+    - name: Run Max Pain Calculator
+      run: |
+        echo "Deribit'ten veriler cekiliyor..."
+        python deribit_longshort_maxpain.py
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if git diff --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "Veri degisikliği yok"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "Yeni veriler mevcut"
+        fi
+    
+    - name: Commit and push
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --local user.name "Max Pain Bot"
+        git config --local user.email "bot@github-actions"
+        git add data/maxpain_longshort.json data/tradingview_format.txt
+        git commit -m "Update: Max Pain verileri guncellendi [bot]"
+        git push
