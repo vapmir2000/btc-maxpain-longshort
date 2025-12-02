@@ -1,6 +1,6 @@
 # BTC Long/Short Max Pain Levels
-# Updated: 2025-12-02 04:37:29
-# Current Price: $87,012.12
+# Updated: 2025-12-02 08:39:48
+# Current Price: $86,658.30
 
 # Format: TIMEFRAME_LONG=PRICE
 #         TIMEFRAME_SHORT=PRICE
