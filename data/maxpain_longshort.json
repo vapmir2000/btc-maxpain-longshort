@@ -1,61 +1,61 @@
 {
-  "timestamp": 1783914291,
-  "current_price": 62771.01,
-  "update_time": "2026-07-13 03:44:51",
+  "timestamp": 1783927791,
+  "current_price": 62921.47,
+  "update_time": "2026-07-13 07:29:51",
   "timeframes": {
     "12H": {
       "long_maxpain": 57000.0,
       "short_maxpain": 64500.0,
-      "long_distance_pct": -9.193750427147823,
-      "short_distance_pct": 2.754440306122202,
+      "long_distance_pct": -9.410889478583385,
+      "short_distance_pct": 2.5087303268661696,
       "expiry_date": "2026-07-14",
       "days_until": 0
     },
     "24H": {
       "long_maxpain": 57000.0,
       "short_maxpain": 64500.0,
-      "long_distance_pct": -9.193750427147823,
-      "short_distance_pct": 2.754440306122202,
+      "long_distance_pct": -9.410889478583385,
+      "short_distance_pct": 2.5087303268661696,
       "expiry_date": "2026-07-14",
       "days_until": 0
     },
     "48H": {
       "long_maxpain": 57000.0,
       "short_maxpain": 64000.0,
-      "long_distance_pct": -9.193750427147823,
-      "short_distance_pct": 1.9578942572375337,
+      "long_distance_pct": -9.410889478583385,
+      "short_distance_pct": 1.7140890065028658,
       "expiry_date": "2026-07-15",
       "days_until": 1
     },
     "3D": {
-      "long_maxpain": 57000.0,
+      "long_maxpain": 56000.0,
       "short_maxpain": 64500.0,
-      "long_distance_pct": -9.193750427147823,
-      "short_distance_pct": 2.754440306122202,
+      "long_distance_pct": -11.000172119309992,
+      "short_distance_pct": 2.5087303268661696,
       "expiry_date": "2026-07-16",
       "days_until": 2
     },
     "1W": {
       "long_maxpain": 48000.0,
       "short_maxpain": 70000.0,
-      "long_distance_pct": -23.53157930707185,
-      "short_distance_pct": 11.516446843853553,
+      "long_distance_pct": -23.71443324512285,
+      "short_distance_pct": 11.24978485086251,
       "expiry_date": "2026-07-17",
       "days_until": 3
     },
     "2W": {
       "long_maxpain": 50000.0,
       "short_maxpain": 75000.0,
-      "long_distance_pct": -20.345395111533175,
-      "short_distance_pct": 19.481907332700235,
+      "long_distance_pct": -20.535867963669634,
+      "short_distance_pct": 19.196198054495543,
       "expiry_date": "2026-07-24",
       "days_until": 10
     },
     "1M": {
       "long_maxpain": 45000.0,
       "short_maxpain": 120000.0,
-      "long_distance_pct": -28.31085560037986,
-      "short_distance_pct": 91.17105173232038,
+      "long_distance_pct": -28.48228116730267,
+      "short_distance_pct": 90.71391688719287,
       "expiry_date": "2026-07-31",
       "days_until": 17
     }
